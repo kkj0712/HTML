@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>date</title>
+</head>
+<body>
+	<form>
+        <fieldset>
+            <legend><h3>조회기간 선택</h3></legend>
+            <label>시작: <input type="date" id="start" value="2020-07-01"></label>
+            <label>끝: <input type="date" id="end" value="2020-12-31"></label>
+        </fieldset>
+        <fieldset>
+            <legend><h3>대관시간 선택(오늘)</h3></legend>
+            <label>시작 시간 <input type="time" value="09:00" id="start"></label>
+            <label>종료 시간 <input type="time" value="18:00" id="end"></label>
+        </fieldset>
+        <fieldset>
+            <legend><h3>대관시간 선택(다른날짜)</h3></legend>
+            <label>시작 시간<input type="datetime-local" value="2020-07-01T09:00"></label>
+            <label>종료 시간<input type="datetime-local" value="2020-12-31T09:00"></label>
+        </fieldset>
+    </form>
+</body>
+</html>
