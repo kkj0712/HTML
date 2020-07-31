@@ -1,0 +1,33 @@
+<!-- 김경진 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 수학객체 </title>
+<script>
+	document.write("<h1>컴퓨터 가위, 바위, 보 게임</h1>");
+	var game=prompt("가위, 바위, 보 중에 선택", "가위");
+	var gameNum=0;
+	switch(game.trim()){
+		case "가위": gameNum=1; break;
+		case "바위": gameNum=2; break;
+		case "보": gameNum=3; break;
+		default : alert("잘못 입력"); location.reload();
+	}
+
+	var comNum=Math.ceil(Math.random()*3);
+	document.write("<image src=\images/math_img_"+comNum+".jpg\>");
+	
+	if(gameNum==comNum){
+		document.write("비겼습니다.");
+	}else if(gameNum==1&&comNum==3 || gameNum==2&&comNum==1 || gameNum==3&&comNum==2){
+		document.write("이겼습니다.");
+	}else{
+		document.write("졌습니다.");
+	}
+	document.write("<image src=\images/math_img_"+gameNum+".jpg\>");
+</script>
+</head>
+<body>
+</body>
+</html>

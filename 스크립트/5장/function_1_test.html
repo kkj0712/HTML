@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 함수 </title>
+<script>
+	var count = 0;
+	myFunc();
+
+	function myFunc(){ //정상적인 함수 정의
+		count++;
+		document.write("hello"+count,"<br>");
+	}
+
+	myFunc();
+
+	var theFunc=function(){ //익명 함수 선언
+		count++; 
+		document.write("bye"+count,"<br>");
+	}
+
+	theFunc();
+</script>
+</head>
+<body>
+</body>
+</html>
